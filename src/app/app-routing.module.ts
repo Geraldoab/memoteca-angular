@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CreateThoughtComponent } from './components/thoughts/create-thought/create-thought.component';
 import { ThoughtsListComponent } from './components/thoughts/thoughts-list/thoughts-list.component';
+import { DeleteThoughtComponent } from './components/thoughts/delete-thought/delete-thought.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
       path: 'listThoughts',
       component: ThoughtsListComponent
+  },
+  {
+    path: 'thoughts/delete/:id',
+    component: DeleteThoughtComponent
   }
 ];
 

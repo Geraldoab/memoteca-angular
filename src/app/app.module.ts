@@ -10,6 +10,7 @@ import { CreateThoughtComponent } from './components/thoughts/create-thought/cre
 import { ThoughtsListComponent } from './components/thoughts/thoughts-list/thoughts-list.component';
 import { ThoughtComponent } from './components/thoughts/thought/thought.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DeleteThoughtComponent } from './components/thoughts/delete-thought/delete-thought.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     CreateThoughtComponent,
     ThoughtsListComponent,
-    ThoughtComponent
+    ThoughtComponent,
+    DeleteThoughtComponent
   ],
   imports: [
     BrowserModule,
