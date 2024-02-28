@@ -11,9 +11,9 @@ import { Router } from '@angular/router';
 export class CreateThoughtComponent implements OnInit {
 
   newThought : Thought = {
-    conteudo: '',
-    autoria: '',
-    modelo: ''
+    content: '',
+    author: '',
+    layout: ''
   }
 
   constructor(
@@ -26,11 +26,11 @@ export class CreateThoughtComponent implements OnInit {
 
   createThought() {
     this.service.create(this.newThought).subscribe(()=> {
-      this.router.navigate(['/listThoughts'])
+      this.router.navigate(['/thoughts/all'])
     })
   }
 
   cancel() {
-    this.router.navigate(['/listThoughts'])
+    this.router.navigate(['/thoughts/all'])
   }
 }

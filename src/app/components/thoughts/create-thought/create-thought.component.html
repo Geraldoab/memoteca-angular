@@ -1,27 +1,27 @@
 <section class="container criar-pensamentos ff-inter">
   <header class="header">
-      <h2>Adicione um <br> pensamento novo:</h2>
+      <h2>Add a new <br> thought:</h2>
   </header>
   <form>
-      <label for="pensamento">Pensamento</label>
+      <label for="pensamento">Thought</label>
       <input
         type="textarea"
         class="input"
         id="pensamento"
         name="pensamento"
-        placeholder="Digite o pensamento"
-        [(ngModel)]="newThought.conteudo">
+        placeholder="Type something..."
+        [(ngModel)]="newThought.content">
 
-      <label for="autoria">Autoria ou fonte</label>
+      <label for="autoria">Author</label>
       <input
         type="text"
         class="input"
         id="autoria"
         name="autoria"
-        placeholder="Digite a autoria ou fonte"
-        [(ngModel)]="newThought.autoria">
+        placeholder="Type the author"
+        [(ngModel)]="newThought.author">
 
-      <label for="modelo">Selecione o modelo do card:</label>
+      <label for="modelo">Select a card layout:</label>
       <div class="container-radio">
           <div class="radio-modelo">
               <label for="modelo1">
@@ -29,18 +29,18 @@
                       type="radio"
                       id="modelo1"
                       value="modelo1"
-                      [(ngModel)]="newThought.modelo"
+                      [(ngModel)]="newThought.layout"
                       name="modelo-card"
                   >
                   <div class="custom-radio">
                       <span></span>
                   </div>
-                  <span>Modelo 1</span>
+                  <span>Layout 1</span>
               </label>
               <div class="modelo modelo1 ff-roboto-mono">
-                <img src="../../../../assets/images/modelo1.png" alt="Aspas azuis">
-                <p class="conteudo">{{ newThought.conteudo }}</p>
-                <p class="autoria"><b>{{ newThought.autoria }}</b></p>
+                <img src="../../../../assets/images/modelo1.png" alt="Double quotes icon">
+                <p class="conteudo">{{ newThought.content }}</p>
+                <p class="autoria"><b>{{ newThought.author }}</b></p>
               </div>
           </div>
           <div class="radio-modelo">
@@ -49,18 +49,18 @@
                     type="radio"
                     id="modelo2"
                     value="modelo2"
-                    [(ngModel)]="newThought.modelo"
+                    [(ngModel)]="newThought.layout"
                     name="modelo-card"
                 >
                 <div class="custom-radio">
                     <span></span>
                 </div>
-                <span>Modelo 2</span>
+                <span>Layout 2</span>
             </label>
             <div class="modelo modelo2 ff-roboto-mono">
-              <img src="../../../../assets/images/modelo2.png" alt="Aspas azuis">
-              <p class="conteudo">{{ newThought.conteudo }}</p>
-              <p class="autoria"><b>{{ newThought.autoria }}</b></p>
+              <img src="../../../../assets/images/modelo2.png" alt="Double quotes icon">
+              <p class="conteudo">{{ newThought.content }}</p>
+              <p class="autoria"><b>{{ newThought.author }}</b></p>
             </div>
           </div>
           <div class="radio-modelo">
@@ -69,18 +69,18 @@
                     type="radio"
                     id="modelo3"
                     value="modelo3"
-                    [(ngModel)]="newThought.modelo"
+                    [(ngModel)]="newThought.layout"
                     name="modelo-card"
                 >
                 <div class="custom-radio">
                     <span></span>
                 </div>
-                <span>Modelo 3</span>
+                <span>Layout 3</span>
             </label>
             <div class="modelo modelo3 ff-roboto-mono">
-              <img src="../../../../assets/images/modelo3.png" alt="Aspas azuis">
-              <p class="conteudo">{{ newThought.conteudo }}</p>
-              <p class="autoria"><b>{{ newThought.autoria }}</b></p>
+              <img src="../../../../assets/images/modelo3.png" alt="Double quotes icon">
+              <p class="conteudo">{{ newThought.content }}</p>
+              <p class="autoria"><b>{{ newThought.author }}</b></p>
             </div>
           </div>
         </div>

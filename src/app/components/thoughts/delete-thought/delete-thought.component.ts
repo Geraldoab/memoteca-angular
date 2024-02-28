@@ -12,9 +12,9 @@ export class DeleteThoughtComponent implements OnInit {
 
   currentThought: Thought = {
     id: 0,
-    conteudo: '',
-    autoria: '',
-    modelo: ''
+    content: '',
+    author: '',
+    layout: ''
   }
 
   constructor(
@@ -33,12 +33,12 @@ export class DeleteThoughtComponent implements OnInit {
   deleteThought() {
     if(this.currentThought.id) {
       this.service.delete(this.currentThought.id).subscribe(() => {
-        this.router.navigate(['/listThoughts'])
+        this.router.navigate(['/thoughts/all'])
       })
     }
   }
 
   cancel() {
-    this.router.navigate(['/listThoughts'])
+    this.router.navigate(['/thoughts/all'])
   }
 }

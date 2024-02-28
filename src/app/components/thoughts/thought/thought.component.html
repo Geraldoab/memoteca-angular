@@ -1,13 +1,13 @@
-<div class="pensamento {{ currentThought.modelo }} ff-roboto-mono" [ngClass]="thoughtWidth()">
-  <img src="/assets/images/{{ currentThought.modelo }}.png" alt="Aspas coloridas">
-  <p class="conteudo">{{ currentThought.conteudo }}</p>
-  <p class="autoria"><b>{{ currentThought.autoria }}</b></p>
+<div class="pensamento {{ currentThought.layout }} ff-roboto-mono" [ngClass]="thoughtWidth()">
+  <img src="/assets/images/{{ currentThought.layout }}.png" alt="Double quotes icon">
+  <p class="conteudo">{{ currentThought.content }}</p>
+  <p class="autoria"><b>{{ currentThought.author }}</b></p>
   <div class="acoes">
       <button class="botao-editar" routerLink="/thoughts/edit/{{currentThought.id}}">
-          <img src="/assets/images/icone-editar.png" alt="Ícone de editar">
+          <img src="/assets/images/icone-editar.png" alt="Edit icon">
       </button>
       <button class="botao-excluir" routerLink="/thoughts/delete/{{currentThought.id}}">
-          <img src="/assets/images/icone-excluir.png" alt="Ícone de excluir">
+          <img src="/assets/images/icone-excluir.png" alt="Delete icon">
       </button>
   </div>
 </div>

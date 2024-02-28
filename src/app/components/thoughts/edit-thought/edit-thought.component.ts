@@ -12,9 +12,9 @@ export class EditThoughtComponent implements OnInit {
 
   selectedThought : Thought = {
     id: 0,
-    conteudo: '',
-    autoria: '',
-    modelo: ''
+    content: '',
+    author: '',
+    layout: ''
   }
 
   constructor(
@@ -32,11 +32,11 @@ export class EditThoughtComponent implements OnInit {
 
   editThought() {
     this.service.edit(this.selectedThought).subscribe(() => {
-      this.router.navigate(['/listThoughts'])
+      this.router.navigate(['/thoughts/all'])
     })
   }
 
   cancel() {
-    this.router.navigate(['/listThoughts'])
+    this.router.navigate(['/thoughts/all'])
   }
 }

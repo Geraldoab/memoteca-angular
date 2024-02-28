@@ -8,15 +8,15 @@ import { EditThoughtComponent } from './components/thoughts/edit-thought/edit-th
 const routes: Routes = [
   {
       path: '',
-      redirectTo: 'listThoughts',
+      redirectTo: 'thoughts/all',
       pathMatch: 'full'
   },
   {
-      path: 'createThought',
+      path: 'thoughts/create',
       component: CreateThoughtComponent
   },
   {
-      path: 'listThoughts',
+      path: 'thoughts/all',
       component: ThoughtsListComponent
   },
   {

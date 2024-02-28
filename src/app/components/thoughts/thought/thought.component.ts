@@ -10,9 +10,9 @@ export class ThoughtComponent implements OnInit {
 
   @Input() currentThought : Thought = {
     id: 0,
-    conteudo: '',
-    autoria: '',
-    modelo: ''
+    content: '',
+    author: '',
+    layout: ''
   }
 
   constructor() { }
@@ -21,7 +21,7 @@ export class ThoughtComponent implements OnInit {
   }
 
   thoughtWidth() : string {
-    if(this.currentThought.conteudo.length >= 256) {
+    if(this.currentThought.content.length >= 256) {
       return 'pensamento-g'
     }
     return 'pensamento-p'
