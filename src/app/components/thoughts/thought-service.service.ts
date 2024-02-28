@@ -20,6 +20,11 @@ export class ThoughtService {
     return this.http.post<Thought>(this.THOUGHTS_URL, newThought)
   }
 
+  edit(currentThought: Thought) : Observable<Thought> {
+    const url = `${this.THOUGHTS_URL}/${currentThought.id}`
+    return this.http.put<Thought>(url, currentThought)
+  }
+
   delete(id: number) : Observable<Thought> {
     const url = `${this.THOUGHTS_URL}/${id}`
     return this.http.delete<Thought>(url)
