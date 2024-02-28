@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Thought } from '../Thought';
+import { ThoughtService } from '../thought-service.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-create-thought',
@@ -9,22 +11,26 @@ import { Thought } from '../Thought';
 export class CreateThoughtComponent implements OnInit {
 
   pensamento : Thought = {
-    id: 1,
-    conteudo: 'Aprendendo Angular',
-    autoria: 'Dev',
-    modelo: 'modelo1'
+    conteudo: '',
+    autoria: '',
+    modelo: ''
   }
 
-  constructor() { }
+  constructor(
+    private service: ThoughtService,
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
   }
 
   createThought() {
-    alert("A new thought was created!")
+    this.service.create(this.pensamento).subscribe(()=> {
+      this.router.navigate(['/listThoughts'])
+    })
   }
 
   cancel() {
-    alert("Cancelled!")
+    this.router.navigate(['/listThoughts'])
   }
 }

@@ -9,6 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CreateThoughtComponent } from './components/thoughts/create-thought/create-thought.component';
 import { ThoughtsListComponent } from './components/thoughts/thoughts-list/thoughts-list.component';
 import { ThoughtComponent } from './components/thoughts/thought/thought.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ThoughtComponent } from './components/thoughts/thought/thought.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
