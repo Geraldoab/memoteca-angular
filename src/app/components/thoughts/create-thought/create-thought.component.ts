@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class CreateThoughtComponent implements OnInit {
 
-  pensamento : Thought = {
+  newThought : Thought = {
     conteudo: '',
     autoria: '',
     modelo: ''
@@ -25,7 +25,7 @@ export class CreateThoughtComponent implements OnInit {
   }
 
   createThought() {
-    this.service.create(this.pensamento).subscribe(()=> {
+    this.service.create(this.newThought).subscribe(()=> {
       this.router.navigate(['/listThoughts'])
     })
   }

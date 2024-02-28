@@ -2,15 +2,9 @@
   "thoughts": [
     {
       "id": 1,
-      "conteudo": "Que bom que vc veio 1",
-      "autoria": "Nay",
+      "conteudo": "Let's learn Angular!",
+      "autoria": "Geraldo Borges",
       "modelo": "modelo1"
-    },
-    {
-      "id": 2,
-      "conteudo": "Estudando Angular",
-      "autoria": "Dev Alura",
-      "modelo": "modelo2"
     },
     {
       "id": 3,
