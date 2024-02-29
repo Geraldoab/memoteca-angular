@@ -1,0 +1,7 @@
+version: '3.5'
+services:
+  memotecaJsonServer:
+    container_name: memotecaJsonServer
+    image: geraldoab/memoteca-json-server:1.0
+    ports:
+      - 3000:3000
