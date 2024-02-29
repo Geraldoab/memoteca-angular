@@ -1,5 +1,5 @@
 <div class="pensamento {{ currentThought.layout }} ff-roboto-mono" [ngClass]="thoughtWidth()">
-  <img src="/assets/images/{{ currentThought.layout }}.png" alt="Double quotes icon">
+  <img src="/assets/images/{{ currentThought.layout }}.png" *ngIf="currentThought.layout.length > 0" alt="Double quotes icon">
   <p class="conteudo">{{ currentThought.content }}</p>
   <p class="autoria"><b>{{ currentThought.author }}</b></p>
   <div class="acoes">
